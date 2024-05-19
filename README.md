@@ -1,5 +1,15 @@
 # pands-project
 
+### Installation instructions:
+
+Clone the repository and change directory into it.
+
+`git clone git@github.com:Cking313/pands-project.git && cd pands-project`
+
+Install the requirements using the supplied requirements.txt file:
+
+`pip install -r requirements.txt`
+
 ### Data Summary
 
 ![](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png)
