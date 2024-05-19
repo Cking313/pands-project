@@ -23,3 +23,15 @@ The observations are evenly distributed between the species, with 50 observation
 ![](charts/petal_width_histogram.png)
 
 There are many observations of very narrow petals, and otherwise a spread of values between 1 and 2.5 cm. The large number of narrow petals may be due to the iris setosa observations, as this species has a significantly narrower petal on average than the other two species.
+
+![](charts/petal_length_histogram.png)
+
+Petal length is similarly distributed, with two groups of values - one small narrowly distributed and one larger, wider group.
+
+![](charts/sepal_width_histogram.png)
+
+Sepal width appears to be relatively normally distributed compared to the petal measurements, with values centered around 3cm.
+
+![](charts/sepal_length_histogram.png)
+
+Again, there is less of an obvious separation between groups for sepal length, however the values are not as centered around a single value as with sepal width, with a semeingly even spread of values between around 4.5 and 7cm.
