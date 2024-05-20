@@ -94,3 +94,16 @@ Individual charts for each variable pair coloured by species can be found below:
 ![](charts/sepal_width_vs_petal_length.png)
 
 ![](charts/sepal_width_vs_petal_width.png)
+
+### References
+
+- https://stackoverflow.com/questions/32400867/pandas-read-csv-from-url
+- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_markdown.html
+- https://www.geeksforgeeks.org/python-check-if-a-file-or-directory-exists/
+- https://python-charts.com/seaborn/themes/
+- https://seaborn.pydata.org/generated/seaborn.scatterplot.html
+- https://seaborn.pydata.org/generated/seaborn.histplot.html
+- https://seaborn.pydata.org/generated/seaborn.pairplot.html
+- https://docs.python.org/3/library/itertools.html#itertools.combinations
+- https://blog.teclado.com/destructuring-in-python/

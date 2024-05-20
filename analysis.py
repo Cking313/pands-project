@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pathlib
 import itertools
+
+# https://python-charts.com/seaborn/themes/
 sns.set_style(style='darkgrid')
 
 # Load the dataset
@@ -14,6 +16,7 @@ iris = pd.read_csv(url, header=None, names=columns)
 iris.to_csv('iris.csv', index=False)
 
 # write variable summary to file as markdown table
+# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_markdown.html
 iris.describe(include='all').to_markdown('iris_description.md')
 
 chart_folder = pathlib.Path('charts')
@@ -33,6 +36,7 @@ for column, name in zip(columns, names):
     plt.close()
 
 # all in one pairplot of histograms and scatterplots
+# https://seaborn.pydata.org/generated/seaborn.pairplot.html
 plt.figure(figsize=(12,8))
 sns.pairplot(iris[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
 plt.savefig(chart_folder/'paired_scatterplot.png')
@@ -40,6 +44,7 @@ plt.close()
 
 # scatterplot for each combination of 2 variables
 # destructure the pairs of (name, column) tuples into sets of 1 and 2
+# https://docs.python.org/3/library/itertools.html#itertools.combinations
 for (name1, col1), (name2, col2) in itertools.combinations([*zip(names, columns)], 2):
     plt.figure(figsize=(12,8))
     sns.scatterplot(data=iris, x=col1, y=col2, hue='species')
