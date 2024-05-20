@@ -48,10 +48,17 @@ A numerical description of the data produced by pandas can be found below, inclu
 | 75%    |       6.4      |      3.3      |        5.1     |      1.8      | nan         |
 | max    |       7.9      |      4.4      |        6.9     |      2.5      | nan         |
 
-There are 150 data points across 5 columns
-4 of the columns are numeric and one is categorical
-The 4 numeric columns are ....
+There are 150 data points across 5 columns.
+
+4 of the columns are numeric and one is categorical.
+
+The 4 numeric columns represent various measurements of the irises; petal width, petal length, sepal width, and sepal length. The categorical column denotes the species
+
 sepal_length has a mean value of 5.84, and its values range from a minimum of 4.3 to a maximum of 7.9
+
+sepal_width has a mean value of 3.04, and ranges from 2 to 4.4cm.
+
+Petal Length has a mean value of 3.76 with values ranging from 1cm to 6.9cm, and petal width has a mean value of 1.19.
 
 petal_length has the largest spread in values, as its standard deviation is 1.76, whereas the other numeric columns have standard deviations less than 1 - we would expect to see a wider histogram for petal length than the other numeric features.
 
