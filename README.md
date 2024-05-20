@@ -10,6 +10,20 @@ Install the requirements using the supplied requirements.txt file:
 
 `pip install -r requirements.txt`
 
+The code can then be run:
+`python ./analysis.py`
+
+This will:
+
+- Download the Iris dataset and save it to a .csv file
+- Generate a numeric summary fo the data using pandas, and write this to a .md file as a markdown table
+- Create a folder called "charts/" if one does not exist already
+- Generate a histogram of each of the numeric features in the iris dataset and save these to charts/
+- Generate a pairplot for the dataset and save this to charts/
+- Generate a scatterplot for each pair of numeric variables and save these to charts/
+
+The created charts are referenced in this README file, so once the analysis.py file has been run the local filepaths will resolve properly.
+
 ### Data Summary
 
 ![](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png)
@@ -66,3 +80,17 @@ Looking at the pairplot, which includes density plots separated by colour per sp
 We can see from the scatterplots that while iris virginica and versicolor have separable clusters of values, their values for most pairs of variables are close together, whereas iris setosa's value clusters are quite far away from the values of the other two species.
 
 ![](charts/paired_scatterplot.png)
+
+Individual charts for each variable pair coloured by species can be found below:
+
+![](charts/petal_length_vs_petal_width.png)
+
+![](charts/sepal_length_vs_petal_length.png)
+
+![](charts/sepal_length_vs_petal_width.png)
+
+![](charts/sepal_length_vs_sepal_width.png)
+
+![](charts/sepal_width_vs_petal_length.png)
+
+![](charts/sepal_width_vs_petal_width.png)

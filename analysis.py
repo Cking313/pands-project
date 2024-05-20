@@ -5,7 +5,6 @@ import pathlib
 import itertools
 sns.set_style(style='darkgrid')
 
-
 # Load the dataset
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
 columns = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
@@ -40,6 +39,7 @@ plt.savefig(chart_folder/'paired_scatterplot.png')
 plt.close()
 
 # scatterplot for each combination of 2 variables
+# destructure the pairs of (name, column) tuples into sets of 1 and 2
 for (name1, col1), (name2, col2) in itertools.combinations([*zip(names, columns)], 2):
     plt.figure(figsize=(12,8))
     sns.scatterplot(data=iris, x=col1, y=col2, hue='species')
