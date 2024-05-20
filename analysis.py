@@ -38,7 +38,7 @@ for column, name in zip(columns, names):
 # all in one pairplot of histograms and scatterplots
 # https://seaborn.pydata.org/generated/seaborn.pairplot.html
 plt.figure(figsize=(12,8))
-sns.pairplot(iris[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
+sns.pairplot(iris, hue='species')
 plt.savefig(chart_folder/'paired_scatterplot.png')
 plt.close()
 
