@@ -18,6 +18,21 @@ Figure 1 - Images of the three Iris species, annotated to demonstrate the differ
 
 _Retrieved from https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png_
 
+A numerical description of the data produced by pandas can be found below, including summary statistics.
+
+|        |   sepal_length |   sepal_width |   petal_length |   petal_width | species     |
+|:-------|---------------:|--------------:|---------------:|--------------:|:------------|
+| count  |     150        |    150        |      150       |    150        | 150         |
+| unique |     nan        |    nan        |      nan       |    nan        | 3           |
+| top    |     nan        |    nan        |      nan       |    nan        | Iris-setosa |
+| freq   |     nan        |    nan        |      nan       |    nan        | 50          |
+| mean   |       5.84333  |      3.054    |        3.75867 |      1.19867  | nan         |
+| std    |       0.828066 |      0.433594 |        1.76442 |      0.763161 | nan         |
+| min    |       4.3      |      2        |        1       |      0.1      | nan         |
+| 25%    |       5.1      |      2.8      |        1.6     |      0.3      | nan         |
+| 50%    |       5.8      |      3        |        4.35    |      1.3      | nan         |
+| 75%    |       6.4      |      3.3      |        5.1     |      1.8      | nan         |
+| max    |       7.9      |      4.4      |        6.9     |      2.5      | nan         |
 
 There are 150 data points across 5 columns
 4 of the columns are numeric and one is categorical
@@ -45,3 +60,9 @@ Sepal width appears to be relatively normally distributed compared to the petal 
 ![](charts/sepal_length_histogram.png)
 
 Again, there is less of an obvious separation between groups for sepal length, however the values are not as centered around a single value as with sepal width, with a semeingly even spread of values between around 4.5 and 7cm.
+
+Looking at the pairplot, which includes density plots separated by colour per species of iris, we can see that iris setosa has a separate distribution of values for petal length and width which are typically much smaller than those of the other two species. This influenced our histograms earlier, as the data for all three species was mixed in together.
+
+We can see from the scatterplots that while iris virginica and versicolor have separable clusters of values, their values for most pairs of variables are close together, whereas iris setosa's value clusters are quite far away from the values of the other two species.
+
+![](charts/paired_scatterplot.png)
